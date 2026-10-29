@@ -15,7 +15,6 @@
     "lint": "eslint . --ext .ts",
     "test": "jest --config jestconfig.json --coverage",
     "test:release": "node --test scripts/tests/release.test.cjs",
-    "prepare": "yarn build",
     "prepublishOnly": "npm test && yarn lint && yarn build:umd && yarn verify:umd",
     "preversion": "yarn lint",
     "version": "yarn format && git add -A src",
